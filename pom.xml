@@ -10,8 +10,8 @@
                              http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.basicprop</groupId>
-    <artifactId>basicprop</artifactId>
+    <groupId>com.heronix.neurosim</groupId>
+    <artifactId>heronix-neurosim</artifactId>
     <version>2.0.0</version>
     <packaging>jar</packaging>
     <name>Heronix NeuroSim</name>
@@ -23,7 +23,7 @@
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <main.class>com.basicprop.Launcher</main.class>
+        <main.class>com.heronix.neurosim.Launcher</main.class>
     </properties>
 
     <dependencies>
@@ -68,7 +68,7 @@
                 </configuration>
             </plugin>
 
-            <!-- Fat / Uber JAR – run with: java -jar target/basicprop-2.0.0-fat.jar -->
+            <!-- Fat / Uber JAR – run with: java -jar target/heronix-neurosim-2.0.0-fat.jar -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>

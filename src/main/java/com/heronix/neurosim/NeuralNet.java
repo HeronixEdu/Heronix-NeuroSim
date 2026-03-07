@@ -10,7 +10,7 @@
  *
  * THIS SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
  */
-package com.basicprop;
+package com.heronix.neurosim;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -21,7 +21,7 @@ import java.util.Random;
  * Feedforward backpropagation network.
  *
  * <p>All non-input units use the logistic (sigmoid) activation function,
- * exactly as described in the original BasicProp documentation.</p>
+ * exactly as described in the original Heronix NeuroSim documentation.</p>
  *
  * <p>Supports:</p>
  * <ul>

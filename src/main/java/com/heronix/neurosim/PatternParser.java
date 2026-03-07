@@ -10,14 +10,14 @@
  *
  * THIS SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
  */
-package com.basicprop;
+package com.heronix.neurosim;
 
 import java.io.*;
 import java.nio.file.*;
 import java.util.*;
 
 /**
- * Parses pattern files in the original BasicProp format.
+ * Parses pattern files in the Heronix NeuroSim format.
  *
  * <pre>
  * Number of patterns = 4

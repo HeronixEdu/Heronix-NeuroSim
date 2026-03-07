@@ -10,7 +10,7 @@
  *
  * THIS SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
  */
-package com.basicprop;
+package com.heronix.neurosim;
 
 import javafx.application.Application;
 import javafx.application.Platform;
@@ -721,7 +721,7 @@ public class MainApp extends Application {
         tabs.setStyle("-fx-background-color: " + BG_PANEL + ";" +
                 " -fx-tab-min-width: 70; -fx-tab-max-height: 30;" +
                 " -fx-font-family: '" + MONO + "'; -fx-font-size: 12;");
-        tabs.getStyleClass().add("basicprop-tabs");
+        tabs.getStyleClass().add("neurosim-tabs");
 
         VBox panel = new VBox(tabs);
         panel.setPadding(new Insets(10, 10, 6, 6));

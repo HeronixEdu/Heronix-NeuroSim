@@ -10,7 +10,7 @@
  *
  * THIS SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
  */
-package com.basicprop;
+package com.heronix.neurosim;
 
 import java.util.Arrays;
 

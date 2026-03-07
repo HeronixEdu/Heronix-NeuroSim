@@ -1,4 +1,4 @@
-# BasicProp Pattern File - 7-Segment Display Character Recognition
+# Heronix NeuroSim Pattern File - 7-Segment Display Character Recognition
 #
 # Segment layout:
 #   +--1--+

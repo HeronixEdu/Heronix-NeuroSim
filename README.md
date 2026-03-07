@@ -11,7 +11,7 @@ Developed by **Michael Katsaros** at **Heronix Education Systems LLC** as a free
 - **Backpropagation Engine** — Feedforward networks with arbitrary layers, sigmoid activation, online/batch gradient descent, momentum, MSE and cross-entropy error functions
 - **Real-Time Visualization** — Live network topology with color-coded weights and node activations
 - **Training Error Chart** — Responsive graph tracking per-epoch error convergence
-- **Pattern File I/O** — Load/save `.pat` files compatible with the original BasicProp format
+- **Pattern File I/O** — Load/save `.pat` files compatible with the Heronix NeuroSim format
 - **Network Config & Weights** — Save/load network configurations (`.cfg`) and trained weights (`.wgt`)
 - **Report Export** — Export training reports in ASCII or binary format
 - **Built-In Presets** — AND, OR, NAND, NOR, XOR, Parity, Half Adder, Encoder, Identity
@@ -47,7 +47,7 @@ Requires Java 17+ and Maven 3.6+.
 
 ```bash
 mvn clean package
-java -jar target/basicprop-2.0.0-fat.jar
+java -jar target/heronix-neurosim-2.0.0-fat.jar
 ```
 
 Or run directly with Maven:
@@ -71,7 +71,7 @@ mvn javafx:run
 
 ## Pattern File Format
 
-Plain text, same format as the original BasicProp `.pat` files:
+Plain text, same format as the Heronix NeuroSim `.pat` files:
 
 ```
 Number of patterns = 4
@@ -92,7 +92,7 @@ The keyword `reset` is recognised (and ignored for feedforward networks).
 ## Project Structure
 
 ```
-basicprop/
+Heronix-NeuroSim/
 ├── pom.xml                          Maven build config
 ├── LICENSE                          MIT License
 ├── README.md                        This file
@@ -101,14 +101,14 @@ basicprop/
 ├── run.sh                           macOS/Linux launcher
 ├── seven_segment.pat                Example pattern file
 └── src/main/
-    ├── java/com/basicprop/
+    ├── java/com/heronix/neurosim/
     │   ├── Launcher.java            Fat JAR entry point
     │   ├── MainApp.java             Main UI application (JavaFX)
     │   ├── NeuralNet.java           Backpropagation engine
     │   ├── NetworkCanvas.java       Network visualization canvas
     │   ├── PatternParser.java       Pattern file parser
     │   └── TrainingPattern.java     Input/target data record
-    └── resources/com/basicprop/
+    └── resources/com/heronix/neurosim/
         ├── theme-hacker.css         Hacker Green theme
         ├── theme-dark.css           Dark theme
         └── theme-system.css         System/Light theme
