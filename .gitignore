@@ -1,0 +1,29 @@
+# Build output
+target/
+dist/
+dependency-reduced-pom.xml
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.settings/
+.project
+.classpath
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Fat JAR (built artifact, not source)
+HeronixNeuroSim-2.0.0.jar
+
+# Screenshots / assignment files (not part of source)
+*.PNG
+*.png
+!src/main/resources/img/Icon.png
+*.pdf
+
+# Claude
+.claude/

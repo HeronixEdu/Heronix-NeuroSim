@@ -1,0 +1,40 @@
+/*
+ * Heronix NeuroSim - Neural Network Simulator
+ * Copyright (c) 2026 Heronix Education Systems LLC
+ * Free and open source - use, modify, and distribute freely.
+ */
+
+/* Heronix NeuroSim - Hacker Green Theme */
+
+/* Menu bar */
+.menu-bar { -fx-background-color: #0c1410; -fx-border-color: #132a1a; -fx-border-width: 0 0 1 0; }
+.menu-bar .menu { -fx-background-color: #0c1410; }
+.menu-bar .menu .label { -fx-text-fill: #00dc78; -fx-font-family: 'Courier New'; -fx-font-size: 12; }
+.menu-bar .menu:hover, .menu-bar .menu:showing { -fx-background-color: #132a1a; }
+.context-menu { -fx-background-color: #0c1410; -fx-border-color: #132a1a; }
+.menu-item { -fx-background-color: #0c1410; }
+.menu-item .label { -fx-text-fill: #b8f0cc; -fx-font-family: 'Courier New'; -fx-font-size: 12; }
+.menu-item:hover, .menu-item:focused { -fx-background-color: #132a1a; }
+.separator-menu-item .line { -fx-border-color: #132a1a; }
+
+/* Tab pane */
+.tab-pane .tab-header-area { -fx-padding: 0; }
+.tab-pane .tab-header-area .tab-header-background { -fx-background-color: #0c1410; }
+.tab-pane .tab { -fx-background-color: #0c1410; -fx-border-color: #132a1a; -fx-border-width: 1 1 0 1; -fx-padding: 4 14 4 14; }
+.tab-pane .tab .tab-label { -fx-text-fill: #1a5a3a; -fx-font-family: 'Courier New'; -fx-font-size: 12; }
+.tab-pane .tab:selected { -fx-background-color: #132a1a; }
+.tab-pane .tab:selected .tab-label { -fx-text-fill: #00dc78; }
+.tab-pane .tab:hover .tab-label { -fx-text-fill: #00dc78; }
+.tab-pane:focused > .tab-header-area > .headers-region > .tab:selected .focus-indicator { -fx-border-color: transparent; }
+
+/* Scroll pane */
+.scroll-pane { -fx-background-color: #0c1410; }
+.scroll-pane .viewport { -fx-background-color: #0c1410; }
+
+/* Titled pane */
+.titled-pane > .title { -fx-background-color: #0c1410; -fx-border-color: #132a1a; }
+.titled-pane > .title > .text { -fx-fill: #00dc78; }
+.titled-pane > .content { -fx-background-color: #0c1410; -fx-border-color: #132a1a; }
+
+/* Split pane dividers */
+.split-pane > .split-pane-divider { -fx-background-color: #132a1a; }

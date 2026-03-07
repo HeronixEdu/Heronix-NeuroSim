@@ -1,0 +1,40 @@
+/*
+ * Heronix NeuroSim - Neural Network Simulator
+ * Copyright (c) 2026 Heronix Education Systems LLC
+ * Free and open source - use, modify, and distribute freely.
+ */
+
+/* Heronix NeuroSim - Dark Theme */
+
+/* Menu bar */
+.menu-bar { -fx-background-color: #1e1e1e; -fx-border-color: #333; -fx-border-width: 0 0 1 0; }
+.menu-bar .menu { -fx-background-color: #1e1e1e; }
+.menu-bar .menu .label { -fx-text-fill: #cccccc; -fx-font-family: 'Courier New'; -fx-font-size: 12; }
+.menu-bar .menu:hover, .menu-bar .menu:showing { -fx-background-color: #333; }
+.context-menu { -fx-background-color: #252526; -fx-border-color: #444; }
+.menu-item { -fx-background-color: #252526; }
+.menu-item .label { -fx-text-fill: #cccccc; -fx-font-family: 'Courier New'; -fx-font-size: 12; }
+.menu-item:hover, .menu-item:focused { -fx-background-color: #094771; }
+.separator-menu-item .line { -fx-border-color: #444; }
+
+/* Tab pane */
+.tab-pane .tab-header-area { -fx-padding: 0; }
+.tab-pane .tab-header-area .tab-header-background { -fx-background-color: #1e1e1e; }
+.tab-pane .tab { -fx-background-color: #2d2d2d; -fx-border-color: #333; -fx-border-width: 1 1 0 1; -fx-padding: 4 14 4 14; }
+.tab-pane .tab .tab-label { -fx-text-fill: #888; -fx-font-family: 'Courier New'; -fx-font-size: 12; }
+.tab-pane .tab:selected { -fx-background-color: #1e1e1e; }
+.tab-pane .tab:selected .tab-label { -fx-text-fill: #4fc3f7; }
+.tab-pane .tab:hover .tab-label { -fx-text-fill: #4fc3f7; }
+.tab-pane:focused > .tab-header-area > .headers-region > .tab:selected .focus-indicator { -fx-border-color: transparent; }
+
+/* Scroll pane */
+.scroll-pane { -fx-background-color: #1e1e1e; }
+.scroll-pane .viewport { -fx-background-color: #1e1e1e; }
+
+/* Titled pane */
+.titled-pane > .title { -fx-background-color: #252526; -fx-border-color: #333; }
+.titled-pane > .title > .text { -fx-fill: #4fc3f7; }
+.titled-pane > .content { -fx-background-color: #1e1e1e; -fx-border-color: #333; }
+
+/* Split pane dividers */
+.split-pane > .split-pane-divider { -fx-background-color: #333; }
