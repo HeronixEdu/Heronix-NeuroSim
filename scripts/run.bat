@@ -16,7 +16,7 @@ if %errorlevel% neq 0 (
 )
 
 echo Starting Heronix NeuroSim...
-java -jar "%~dp0HeronixNeuroSim-3.0.0.jar" 2>nul
+java -jar "%~dp0..\dist\HeronixNeuroSim-3.0.0.jar" 2>nul
 
 if %errorlevel% neq 0 (
     echo.

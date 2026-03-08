@@ -1,8 +1,35 @@
 # Heronix NeuroSim v3.0
 
-A desktop neural network simulator for education and experimentation, built with JavaFX.
+**Heronix NeuroSim** is a desktop neural network simulator designed for teaching and experimentation with classical machine learning models.
 
-Developed by **Michael Katsaros** at **Heronix Education Systems LLC** as a free educational tool.
+It allows students to visually explore how neural networks learn through backpropagation, inspect intermediate calculations step by step, and experiment with different architectures including feedforward networks, simple RNNs, convolutional layers, and attention mechanisms.
+
+Built with JavaFX by **Michael Katsaros** at **Heronix Education Systems LLC** — free and open source.
+
+> **Focus:** Heronix NeuroSim prioritizes *interpretability and learning* over large-scale training. It is designed for students who want to understand how neural networks compute gradients, update weights, and converge — not as a replacement for TensorFlow or PyTorch.
+
+---
+
+## Download
+
+Pre-built binaries are available on the [Releases](https://github.com/HeronixEdu/Heronix-NeuroSim/releases) page.
+
+**Latest version:** [`HeronixNeuroSim-3.0.0.jar`](https://github.com/HeronixEdu/Heronix-NeuroSim/releases/latest)
+
+Or clone the repository and find the JAR in the `dist/` folder.
+
+---
+
+## Screenshots
+
+> Screenshots coming soon. See `docs/images/` for the latest visuals.
+
+| View | Description |
+|------|-------------|
+| Network Visualization | Live topology with color-coded weights and node activations |
+| Training Error Chart | Per-epoch error convergence graph |
+| Step-by-Step Mode | Forward/backward pass with net inputs, activations, deltas |
+| Architecture Demos | Interactive RNN, CNN, and Attention panels |
 
 ---
 
@@ -41,11 +68,11 @@ That's it. The fat JAR bundles all dependencies including JavaFX.
 ### Option 1: Run the pre-built JAR
 
 ```bash
-java -jar HeronixNeuroSim-3.0.0.jar
+java -jar dist/HeronixNeuroSim-3.0.0.jar
 ```
 
-On **Windows**, double-click `run.bat`.
-On **macOS/Linux**, run `./run.sh`.
+On **Windows**, run `scripts/run.bat`.
+On **macOS/Linux**, run `scripts/run.sh`.
 
 ### Option 2: Build from source
 
@@ -80,7 +107,7 @@ mvn javafx:run
 
 ## Pattern File Format
 
-Plain text, same format as the Heronix NeuroSim `.pat` files:
+Plain text `.pat` files:
 
 ```
 Number of patterns = 4
@@ -96,6 +123,8 @@ Number of outputs = 1
 Values can be separated by spaces or tabs. Lines starting with `#` are treated as comments.
 The keyword `reset` is recognised (and ignored for feedforward networks).
 
+See the `examples/` folder for sample pattern files.
+
 ---
 
 ## Project Structure
@@ -105,10 +134,18 @@ Heronix-NeuroSim/
 ├── pom.xml                          Maven build config
 ├── LICENSE                          MIT License
 ├── README.md                        This file
-├── HeronixNeuroSim-3.0.0.jar       Pre-built distributable
-├── run.bat                          Windows launcher
-├── run.sh                           macOS/Linux launcher
-├── seven_segment.pat                Example pattern file
+├── dist/
+│   └── HeronixNeuroSim-3.0.0.jar   Pre-built distributable
+├── scripts/
+│   ├── run.bat                      Windows launcher
+│   └── run.sh                       macOS/Linux launcher
+├── examples/
+│   ├── seven_segment.pat            7-segment display patterns
+│   ├── and.pat                      AND gate
+│   ├── or.pat                       OR gate
+│   └── xor.pat                      XOR gate
+├── docs/
+│   └── images/                      Screenshots
 └── src/main/
     ├── java/com/heronix/neurosim/
     │   ├── Launcher.java            Fat JAR entry point
@@ -162,6 +199,19 @@ Heronix-NeuroSim/
 | **Built-in tutorials** | No | Yes (10 topics) | Partial | No |
 | **Themes** | No | 3 themes | No | No |
 | **Export reports** | No | ASCII + Binary | No | No |
+
+---
+
+## Roadmap
+
+Planned features for future versions:
+
+- Visualization of gradient flow through layers
+- Multiple attention heads
+- LSTM architecture demo
+- Dataset import from CSV
+- GPU acceleration via OpenCL
+- Export trained models to Python (NumPy / PyTorch)
 
 ---
 

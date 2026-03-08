@@ -1,6 +1,5 @@
 # Build output
 target/
-dist/
 dependency-reduced-pom.xml
 
 # IDE
@@ -16,13 +15,10 @@ dependency-reduced-pom.xml
 Thumbs.db
 desktop.ini
 
-# Fat JAR (built artifact, not source)
-HeronixNeuroSim-3.0.0.jar
-
 # Screenshots / assignment files (not part of source)
 *.PNG
 *.png
-!src/main/resources/img/Icon.png
+!docs/images/*.png
 *.pdf
 
 # Claude
