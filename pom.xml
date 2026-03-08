@@ -11,7 +11,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.heronix.neurosim</groupId>
-    <artifactId>heronix-neurosim</artifactId>
+    <artifactId>HeronixNeuroSim</artifactId>
     <version>2.0.0</version>
     <packaging>jar</packaging>
     <name>Heronix NeuroSim</name>
@@ -66,7 +66,7 @@
                 </configuration>
             </plugin>
 
-            <!-- Fat / Uber JAR – run with: java -jar target/heronix-neurosim-2.0.0-fat.jar -->
+            <!-- Fat / Uber JAR – run with: java -jar target/HeronixNeuroSim-2.0.0.jar -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
@@ -76,8 +76,7 @@
                         <phase>package</phase>
                         <goals><goal>shade</goal></goals>
                         <configuration>
-                            <shadedArtifactAttached>true</shadedArtifactAttached>
-                            <shadedClassifierName>fat</shadedClassifierName>
+                            <shadedArtifactAttached>false</shadedArtifactAttached>
                             <transformers>
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
                                     <mainClass>${main.class}</mainClass>
