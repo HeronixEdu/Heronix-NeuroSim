@@ -14,4 +14,4 @@ if ! command -v java &> /dev/null; then
 fi
 
 echo "Starting Heronix NeuroSim..."
-java -jar "$SCRIPT_DIR/HeronixNeuroSim-2.0.0.jar" 2>/dev/null
+java -jar "$SCRIPT_DIR/HeronixNeuroSim-3.0.0.jar" 2>/dev/null

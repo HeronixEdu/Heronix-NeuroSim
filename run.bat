@@ -3,7 +3,7 @@
 :: Copyright (c) 2026 Heronix Education Systems LLC
 :: Developed by Michael Katsaros
 
-title Heronix NeuroSim v2.0
+title Heronix NeuroSim v3.0
 
 where java >nul 2>&1
 if %errorlevel% neq 0 (
@@ -16,7 +16,7 @@ if %errorlevel% neq 0 (
 )
 
 echo Starting Heronix NeuroSim...
-java -jar "%~dp0HeronixNeuroSim-2.0.0.jar" 2>nul
+java -jar "%~dp0HeronixNeuroSim-3.0.0.jar" 2>nul
 
 if %errorlevel% neq 0 (
     echo.
