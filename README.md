@@ -9,6 +9,7 @@ Built with JavaFX by **Michael Katsaros** at **Heronix Education Systems LLC** â
 > **Focus:** Heronix NeuroSim prioritizes *interpretability and learning* over large-scale training. It is designed for students who want to understand how neural networks compute gradients, update weights, and converge â€” not as a replacement for TensorFlow or PyTorch.
 
 ---
+<img width="1102" height="963" alt="NeuroSim-1" src="https://github.com/user-attachments/assets/3196c31d-586b-4da5-bbc6-40d97f575a57" />
 
 ## Download
 
